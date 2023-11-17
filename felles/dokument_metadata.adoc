@@ -1,0 +1,13 @@
+// HTML-verjson av dokument-metadata
+
+****
+
+*Publisert*: {publisert} +
+*Denne versjonen finnes på*: {prodspek-url}/{versjon} +
+*Nyeste versjon finnes på*: {prodspek-url} +
+*Faglig og formelt godkjent av*: Kartverket +
+
+
+****
+
+toc::[]

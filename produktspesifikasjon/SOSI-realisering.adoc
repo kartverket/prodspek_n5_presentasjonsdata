@@ -1,0 +1,6 @@
+// Start of SOSI-format
+ 
+
+ 
+|===
+// End of SOSI-format

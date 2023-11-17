@@ -1,0 +1,230 @@
+:datasett: N5Presentasjonsdata
+:datasett-navn: N5 Presentasjonsdata
+:versjon: 20240101
+:publisert: 2023-11-20
+:skjema-versjon: 20240101
+
+// All informasjon i hode over denne linja må fylles ut for hvert datasett. Linjene under settes av de gitte variablene over og i adoc_parametere.adoc
+include::../felles/adoc_parametere.adoc[]
+= SOSI produktspesifikasjon: {datasett-navn}
+Kartverket
+{versjon}, 2024-01-01
+
+include::../felles/dokument_metadata.adoc[]
+
+
+== Innledning, historikk og endringslogg
+
+=== Innledning
+
+Produktspesifikasjon {datasett-navn} {versjon} spesifiserer hvordan presentasjonsdata på detaljeringsnivå N5 skal kodes.  
+
+Denne produktspesifikasjonen er utarbeidet iht. SOSI produktspesifikasjoner – Krav og godkjenning 5.0 <<SOSI-KRAV>>. UML-modellen som ligger til grunn for innhold i diagrammene og dokumentasjon i kap. 5, følger reglene i SOSI Regler for UML-modellering, versjon 5.1 <<SOSI-UML>>. http://sosi.geonorge.no/veiledere/UML[Denne veilederen] gir hjelp til å lese UML-diagrammene.
+
+
+=== Historikk
+
+Tidligere versjoner:
+
+* N5 Presentasjonsdata 2070101 
+
+
+=== Endringslogg
+
+==== Innhold i endringsloggen
+
+Endringsloggene for det enkelte datasett har som ambisjonsnivå å beskrive de viktigste endringene når det gjelder datainnhold (objekttyper) siden forrige versjon. Endringsloggen vil ikke inneholde alle detaljerte endringer på egenskapsnivå eller endringer når det gjelder utvekslingsformat,  datamodellering eller lignende. 
+
+==== Endringer fra versjon 20170101 til versjon 20240101
+
+* Tatt i bruk eksterne kodelister
+
+
+=== Normative referanser
+
+include::kap1.4.adoc[]
+
+<<<
+
+== Definisjoner og forkortelser
+
+Produktspesifikasjonen baserer seg på definisjoner og forkortelser slik de er beskrevet i 
+http://sosi.geonorge.no/Standarder/FKB_generell_del/#truedefinisjoner-og-forkortelser[FKB generell del 5.0, kapittel 5]
+
+
+<<<
+
+== Generelt om spesifikasjonen
+
+=== Unik identifisering
+{datasett-navn}
+
+==== Fullstendig navn
+N5 Presentasjonsdata
+
+==== Versjon
+{versjon}
+
+=== Referansedato
+2024-01-01
+
+=== Ansvarlig organisasjon
+Kartverket
+
+=== Språk
+nor
+
+=== Hovedtema
+Datakvalitet
+
+=== Temakategori
+presentasjonsData
+
+=== Sammendrag
+N5 Presentasjonsdata inneholder tekst og symboler for presentasjon av FKB-data og andre primærdata i målestokker omkring 1:5000.
+
+
+=== Formål
+Produktspesifikasjonen er laget spesielt med tanke på følgende bruksområder:
+
+* Presentasjon sammen med det avleda produktet N5 Kartdata
+* Produksjon av N5 Raster
+
+
+=== Representasjonsform
+vektor
+
+=== Datasettoppløsning
+Oppløsningen kommer an på oppløsningen på dataene som kontrolleres. 
+
+=== Utstrekningsinformasjon
+
+include::utstrekning.adoc[]
+
+=== Identifikasjonsomfang
+<<HeleDatasettet,Hele datasettet>>
+
+=== Supplerende beskrivelse
+Data ikke angitt
+
+<<<
+
+== Spesifikasjonsomfang
+
+(Antall spesifikasjonsomfang: 1)
+
+[[HeleDatasettet]]
+=== Spesifikasjonsomfang for hele datasettet
+
+==== Identifikasjon
+Hele datasettet
+
+==== Nivå
+Datasett
+
+==== Navn
+{datasett}
+
+==== Beskrivelse
+Hele datasettet
+
+==== Utstrekningsinformasjon
+
+include::utstrekning.adoc[] 
+
+<<<
+
+== Innhold og struktur
+
+=== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+include::kap5.adoc[]
+
+<<<
+
+== Referansesystem
+
+include::kap6.adoc[]
+
+<<<
+
+== Kvalitet
+
+=== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+
+<<<
+
+== Datafangst
+
+=== Omfang
+<<HeleDatasettet,Hele datasettet>>
+
+
+<<<
+
+== Datavedlikehold
+
+Generering fra FKB-datasett, N50-kartdata, SSR, Elveg og fastmerkedatasett.
+
+<<<
+
+== Presentasjon
+
+Ikke relevant
+
+<<<
+
+== Leveranse
+
+include::kap11.adoc[]
+
+<<<
+
+== Tilleggsinformasjon
+
+=== Eksempler på presentasjonsdata etter denne produktspesifikasjonen.
+
+
+
+== Metadata
+
+Ikke relevant
+
+<<<
+
+
+[appendix]
+== GML-realisering
+
+GML-realiseringen følger kravene i "Realisering i GML-format 5.0" <<SOSI-GML>>. Realiseringen defineres av følgende filer:
+
+* link:{skjema-url}/N5presentasjonsdata.xsd[GML-skjema]
+* link:{skjema-url}/N5Presentasjonsdata.sch[Schematron-regler til validering av tilleggskrav til datainnhold og -struktur utover det som er definert i GML-skjemafil] (sch-fil)
+
+[appendix]
+== SOSI-format-realisering
+
+SOSI-realiseringen følger kravene i "Realisering i SOSI-format 5.0" <<SOSI-FORMAT>>. SOSI-kontroll definisjonsfiler finnes på link:{skjema-url}/SOSI-kontroll/[egen katalog]. Under en utlisting av SOSI-formatrealiseringen:
+
+include::SOSI-realisering.adoc[]
+
+:sectnums!:
+
+[appendix]
+== Eksempler på bruk av bruk av spesifikasjonen
+
+=== Eksempelfiler
+
+Gå til link:{skjema-url}/Eksempel[katalog med eksempelfiler] for å se eksempelfiler på SOSI-format.
+
+
+<<<
+
+[discrete]
+== Lisensvilkår
+
+// Inkluder lisensvilkår
+include::../felles/lisensvilkaar.adoc[]
