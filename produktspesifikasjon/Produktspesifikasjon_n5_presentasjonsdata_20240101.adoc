@@ -145,7 +145,7 @@ include::kap5.adoc[]
 
 == Referansesystem
 
-include::kap6.adoc[]
+include::kap6_referansesystem.adoc[]
 
 <<<
 
@@ -179,7 +179,7 @@ Ikke relevant
 
 == Leveranse
 
-include::kap11.adoc[]
+include::kap11_leveranse.adoc[]
 
 <<<
 
