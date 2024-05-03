@@ -1,0 +1,38 @@
+# nonk8s
+apiVersion: "backstage.io/v1alpha1"
+kind: "Component"
+metadata:
+  name: "prodspek_n5_presentasjonsdata"
+  tags:
+  - "public"
+spec:
+  type: "documentation"
+  lifecycle: "production"
+  owner: "felles_kartdatabase"
+  system: "standardisering"
+---
+apiVersion: "backstage.io/v1alpha1"
+kind: "Group"
+metadata:
+  name: "security_champion_prodspek_n5_presentasjonsdata"
+  title: "Security Champion prodspek_n5_presentasjonsdata"
+spec:
+  type: "security_champion"
+  parent: "land_security_champions"
+  members:
+  - "NilsIvarNes"
+  children:
+  - "resource:prodspek_n5_presentasjonsdata"
+---
+apiVersion: "backstage.io/v1alpha1"
+kind: "Resource"
+metadata:
+  name: "prodspek_n5_presentasjonsdata"
+  links:
+  - url: "https://github.com/kartverket/prodspek_n5_presentasjonsdata"
+    title: "prodspek_n5_presentasjonsdata på GitHub"
+spec:
+  type: "repo"
+  owner: "security_champion_prodspek_n5_presentasjonsdata"
+  dependencyOf:
+  - "component:prodspek_n5_presentasjonsdata"
